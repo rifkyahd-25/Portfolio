@@ -1,16 +1,10 @@
-
 import React, { useMemo } from 'react';
 import { motion } from 'framer-motion';
-
-// Utility function to combine class names
-function cn(...classes) {
-  return classes.filter(Boolean).join(' ');
-}
 
 export function TextShimmer({
   children,
   as: Component = 'p',
-  className,
+  className = '',
   duration = 2,
   spread = 2,
 }) {
@@ -22,13 +16,15 @@ export function TextShimmer({
 
   return (
     <MotionComponent
-      className={cn(
-        'relative inline-block bg-[length:250%_100%,auto] bg-clip-text',
-        'text-transparent [--base-color:#a1a1aa] [--base-gradient-color:#000]', // Light gray to black gradient
-        '[--bg:linear-gradient(90deg,#0000_calc(50%-var(--spread)),var(--base-gradient-color),#0000_calc(50%+var(--spread)))] [background-repeat:no-repeat,padding-box]',
-        'dark:[--base-color:#71717a] dark:[--base-gradient-color:#ffffff] dark:[--bg:linear-gradient(90deg,#0000_calc(50%-var(--spread)),var(--base-gradient-color),#0000_calc(50%+var(--spread)))]', // Dark mode with gray to white gradient
-        className
-      )}
+      className={
+        `relative inline-block bg-[length:250%_100%,auto] bg-clip-text 
+        text-transparent [--base-color:#a1a1aa] [--base-gradient-color:#000] 
+        [--bg:linear-gradient(90deg,#0000_calc(50%-var(--spread)),var(--base-gradient-color),#0000_calc(50%+var(--spread)))] 
+        [background-repeat:no-repeat,padding-box] 
+        dark:[--base-color:#71717a] dark:[--base-gradient-color:#ffffff] 
+        dark:[--bg:linear-gradient(90deg,#0000_calc(50%-var(--spread)),var(--base-gradient-color),#0000_calc(50%+var(--spread)))] 
+        ${className}`
+      }
       initial={{ backgroundPosition: '100% center' }}
       animate={{ backgroundPosition: '0% center' }}
       transition={{
@@ -44,4 +40,4 @@ export function TextShimmer({
       {children}
     </MotionComponent>
   );
-}
+} 
