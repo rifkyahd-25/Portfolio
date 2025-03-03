@@ -1,6 +1,6 @@
 import React from "react";
 import { ShootingStars } from "./ui/shooting";
-import { TextShimmer } from "./ui/textShimmer";
+import { TextShimmer } from "./ui/Textshimmer";
 import { WordPullUp } from "./ui/wordPullUp";
 import { Github } from "lucide-react";
 import { Button } from "./Button";
