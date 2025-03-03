@@ -18,7 +18,7 @@ export const TextGenerate = ({ words, className, filter = true, duration = 0.5 }
   return (
     <div className={`font-bold ${className}`}>
       <div className="mt-4">
-        <div className="dark:text-white text-black text-4xl leading-snug tracking-wide">
+        <div className="dark:text-white text-black text-xl sm:text-4xl leading-snug tracking-wide">
           <motion.div ref={ref} initial="hidden" animate={controls} variants={containerVariants}>
             {wordsArray.map((word, idx) => (
               <motion.span

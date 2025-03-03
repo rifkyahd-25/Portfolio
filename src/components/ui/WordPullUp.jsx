@@ -24,7 +24,7 @@ function WordPullUp({
       variants={wrapperFramerProps}
       initial="hidden"
       animate="show"
-      className={`font-display text-center text-4xl font-bold leading-[5rem] tracking-[-0.02em] drop-shadow-sm ${className}`}
+      className={`font-display text-center text-4xl font-bold  tracking-[-0.02em] drop-shadow-sm ${className}`}
     >
       {words.split(" ").map((word, i) => (
         <motion.span

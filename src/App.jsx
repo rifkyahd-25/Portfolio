@@ -5,10 +5,12 @@ import { Experience } from "./pages/Experience";
 import { Home } from "./pages/Home";
 import { Project } from "./pages/Project";
 import { NavBar } from "./components/NavBar";
+import { Footer } from "./components/Footer";
 
 export default function App() {
   return (
     <Router>
+      
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -17,6 +19,7 @@ export default function App() {
         <Route path="project" element={<Project />} />
         <Route path="contect" element={<Contect />} />
       </Routes>
+  <Footer/>
       </Router>
   )
 }
