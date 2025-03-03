@@ -51,8 +51,7 @@ export const Header = () => {
           className="text-xl font-medium tracking-wide text-black dark:text-white sm:text-2xl sm:leading-snug sm:tracking-normal md:text-3xl md:leading-snug lg:text-4xl lg:leading-relaxed"
           words="Building Scalable, Secure, and Performant Web Applications"
         />
-<Button/>
-        
+        <Button />
       </div>
     </div>
   );
