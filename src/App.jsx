@@ -6,10 +6,12 @@ import { Home } from "./pages/Home";
 import { Project } from "./pages/Project";
 import { NavBar } from "./components/NavBar";
 import { Footer } from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 export default function App() {
   return (
     <Router>
+      <ScrollToTop/>
       
       <NavBar />
       <Routes>
