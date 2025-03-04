@@ -10,12 +10,12 @@ const ProjectCard = ({ project }) => {
       transition={{ duration: 0.8 }}
       className="relative w-[350px]"
     >
-      <GlowEffect
+      {/* <GlowEffect
         colors={["#FFFFFF", "#C959DD", "#FF2E54", "#FF9004"]}
         mode="static"
         blur="medium"
-      />
-      <div className="relative rounded-lg  p-2 text-white dark:bg-white dark:text-black">
+      /> */}
+      <div className="relative rounded-lg  p-2 text-white dark:bg-[#5c5470] dark:text-[#dbd8e3]">
         <img
           src={project.image}
           alt={project.title}
@@ -23,7 +23,7 @@ const ProjectCard = ({ project }) => {
         />
 
         <div className="mt-4 text-center">
-          <h2 className="text-2xl font-bold text-black">{project.title}</h2>
+          <h2 className="text-2xl font-bold text-[#dbd8e3]">{project.title}</h2>
           <p className="text-black-300 mt-2">{project.description}</p>
         </div>
 
@@ -33,7 +33,7 @@ const ProjectCard = ({ project }) => {
             <motion.span
               key={index}
               whileHover={{ scale: 1.1 }}
-              className="flex items-center gap-1 px-3 py-1 bg-opacity-20 bg-gray-300 text-black rounded-full text-sm shadow-md"
+              className="flex items-center gap-1 px-3 py-1 bg-opacity-20 bg-gray-300 text-[#dbd8e3] rounded-full text-sm shadow-md"
             >
               <i className={tech.icon}></i> {tech.name}
             </motion.span>
@@ -44,7 +44,7 @@ const ProjectCard = ({ project }) => {
         <div className="mt-6 text-center">
           <a
             href={project.link}
-            className="inline-block px-5 py-3 bg-gradient-to-r from-white to-pink-500 text-black font-bold rounded-full shadow-lg transition-transform transform hover:-translate-y-1"
+            className="inline-block px-5 py-3 bg-gradient-to-r bg-[#2a2438] text-[#dbd8e3] font-bold rounded-full shadow-lg transition-transform transform hover:-translate-y-1"
             target="_blank"
             rel="noopener noreferrer"
           >

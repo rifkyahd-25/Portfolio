@@ -34,7 +34,7 @@ export const WhartIDo = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="flex flex-col md:flex-row items-center text-center md:text-left gap-8"
+          className="flex p-5 rounded-lg bg-[#352F44] flex-col md:flex-row items-center text-center md:text-left gap-8"
         >
           <motion.div
             variants={fadeInLeft(0)}
@@ -107,7 +107,7 @@ export const WhartIDo = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="flex flex-col md:flex-row items-center text-center md:text-left gap-8"
+          className="flex p-5 rounded-lg bg-[#352F44]  flex-col md:flex-row items-center text-center md:text-left gap-8"
         >
           <motion.div
             variants={fadeInLeft(0)}

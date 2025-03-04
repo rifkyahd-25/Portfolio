@@ -2,18 +2,18 @@ import React from 'react'
 import { FaLinkedin, FaGithub, FaInstagram, FaEnvelope, FaTwitter } from "react-icons/fa";
 export const Footer = () => {
   return (
-    <footer className=" py-8 text-center">
+    <footer className=" py-8  text-center">
         <div className="flex justify-center">
 
         <hr class="mt-[30px] text-white w-[90%]" />
         </div>
-      <div className="max-w-3xl mx-auto  shadow-lg rounded-xl p-6">
+      <div className="max-w-3xl mx-auto  bg-[#5c5470] mt-5 shadow-lg rounded-xl p-6">
         <span className="inline-flex items-center bg-green-100 text-green-600 text-sm font-semibold px-3 py-1 rounded-full">
           <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
           Available for work
         </span>
         <h2 className="text-white text-2xl font-semibold mt-4">Let's build something amazing together! 🚀</h2>
-        <button className="mt-4 bg-black text-white px-6 py-2 rounded-full text-lg font-medium hover:bg-gray-900">
+        <button className="mt-4 bg-[#2a2438] text-white px-6 py-2 rounded-full text-lg font-medium hover:bg-gray-900">
           Contact Me
         </button>
       </div>

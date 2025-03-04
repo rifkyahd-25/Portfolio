@@ -5,7 +5,7 @@ import exampleImage from "../assets/example.jpg";
 export const Experience = () => {
   return (
     <motion.section
-      className="min-h-screen flex flex-col items-center justify-center py-16 px-6 sm:px-8 md:px-12 lg:px-20"
+      className="mt-40 flex flex-col items-center justify-center py-16 px-6 sm:px-8 md:px-12 lg:px-20"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}

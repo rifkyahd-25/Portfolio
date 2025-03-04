@@ -85,7 +85,7 @@ export const Education = () => {
         </div>
       </section>
 
-      <section className="text-white pb-28 w-screen" ref={ref}>
+      <section className=" pb-28 w-screen" ref={ref}>
         <motion.div
           className="flex justify-center items-center"
           initial={{ opacity: 0, y: -50 }}
@@ -97,7 +97,7 @@ export const Education = () => {
         </motion.div>
 
         <motion.h1
-          className="p-5 text-5xl font-bold text-center"
+          className="p-5 text-5xl text-[#dbd8e3] font-bold text-center"
           initial={{ opacity: 0, y: 50 }}
           animate={controls}
           variants={{ visible: { opacity: 1, y: 0 } }}
@@ -108,23 +108,23 @@ export const Education = () => {
 
         <div className="container mx-auto flex justify-center">
           <motion.div
-            className="w-full md:w-3/4 lg:w-2/3 bg-white text-gray-900 rounded-lg shadow-lg p-8"
+            className="w-full md:w-3/4 lg:w-2/3 bg-[#5c5470] text-[#dbd8e3] rounded-lg shadow-lg p-8"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={controls}
             variants={{ visible: { opacity: 1, scale: 1 } }}
             transition={{ duration: 1, delay: 0.4 }}
           >
             {/* University Info */}
-            <h2 className="text-3xl font-extrabold text-gray-900 mb-4">
+            <h2 className="text-3xl font-extrabold text-[#dbd8e3] mb-4">
               The Open University of Sri Lanka (OUSL)
             </h2>
-            <h3 className="text-xl font-semibold text-gray-600 mb-6">
+            <h3 className="text-xl font-semibold text-[#dbd8e3] mb-6">
               Bachelor of Software Engineering (BSE)
               <span className="text-sm text-gray-400">| 2024 - Present</span>
             </h3>
 
             {/* Course Highlights */}
-            <div className="space-y-4">
+            <div className="space-y-4 ">
               {[
                 "⚡ Currently studying core subjects like Software Engineering, Data Structures, Algorithms, DBMS, and AI.",
                 "⚡ Gaining experience in Full Stack Development, Cloud Computing, and Mobile App Development.",
@@ -132,7 +132,7 @@ export const Education = () => {
               ].map((item, index) => (
                 <motion.p
                   key={index}
-                  className="text-lg text-gray-700"
+                  className="text-lg  text-[#dbd8e3]"
                   initial={{ opacity: 0, x: -20 }}
                   animate={controls}
                   variants={{ visible: { opacity: 1, x: 0 } }}
@@ -201,15 +201,15 @@ export const Education = () => {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.2 }}
-                className="bg-white text-gray-900 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out transform hover:scale-105"
+                className="bg-[#5c5470] text-gray-900 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out transform hover:scale-105"
               >
                 <div className="p-6 text-center">
-                  <h5 className="text-lg font-semibold text-gray-900 mb-4">
+                  <h5 className="text-lg font-semibold text-white mb-4">
                     {cert.title}
                   </h5>
                   <a
                     href={cert.link}
-                    className="inline-block py-2 px-4 bg-primary text-white rounded-md font-semibold hover:bg-primary-dark transition-all duration-300"
+                    className="inline-block py-2 px-4 bg-[#dbd8e3] text-[#2a2438] rounded-md font-semibold hover:bg-[#939199] transition-all duration-300"
                     download
                   >
                     Download Certificate
@@ -217,7 +217,7 @@ export const Education = () => {
 
                   <div className="mt-4 flex justify-center gap-4">
                     {cert.icons.map(([icon, label], i) => (
-                      <span key={i} className="text-lg flex items-center gap-2">
+                      <span key={i} className="text-lg text-white flex items-center gap-2">
                         {icon} {label}
                       </span>
                     ))}
